@@ -1,24 +1,296 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 7: Múltiples Cuerpos y Predicción de Ensamblaje</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 7: Múltiples Cuerpos y Predicción de Ensamblaje</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes aprendan a diseñar múltiples piezas interconectadas en un único Part Studio de Onshape.</li>
+                                        <li>Que comprendan el concepto de tolerancias de fabricación.</li>
+                                        <li>Que entiendan cómo una IA puede simular y predecir la viabilidad de un ensamblaje, previniendo errores de fabricación.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un Part Studio en Onshape con las 2-3 piezas principales del mecanismo modeladas.</li>
+                                        <li>Una unión clave del mecanismo ha sido "validada" conceptualmente mediante la simulación de Xolo y la recomendación ha sido aplicada.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que todos los sistemas (Internet, Onshape, Xolo) funcionan correctamente.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Repasar el concepto de diseño multi-cuerpo y los tres tipos de encajes por tolerancia (Huelgo, Presión, Transición).</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener un Part Studio de Onshape con dos piezas simples (ej. un eje y un bloque con un agujero) para demostrar en vivo cómo se diseñan en contexto y cómo se puede modificar una para ajustar la tolerancia con la otra.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como el inicio de la construcción digital y el uso de la IA para la predicción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta el desafío de diseñar piezas que deben coexistir y encajar con precisión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos, arquitectos. Tienen sus briefs para sus mecanismos. Hoy, comenzamos la construcción digital. Un mecanismo implica que múltiples piezas deben coexistir y encajar con precisión. Vamos a explorar cómo diseñar estas piezas en contexto. Y luego, haremos algo que parece ciencia ficción: usaremos una simulación de IA para predecir si sus piezas, una vez fabricadas, realmente encajarán.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Procedan con la activación estándar: 'Hola Xolo, listo para la Misión 7', seguido de su nombre, perfil y gustos. Esperen la confirmación para empezar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Presentar el diseño multi-cuerpo, el concepto de tolerancias y la simulación por IA como herramienta de predicción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diseño Multi-cuerpo y Tolerancias ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el diseño en un Part Studio y el problema de la fabricación en el mundo real.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hasta ahora, han creado una pieza por archivo. En Onshape, un 'Part Studio' puede contener múltiples piezas que se diseñan juntas, asegurando un encaje perfecto en el mundo digital. Pero el mundo físico no es perfecto. La fabricación tiene 'tolerancias'. Un agujero de 10mm podría salir de 9.9mm y un eje de 10.1mm, y no encajarían. Su misión es diseñar las piezas y luego usar a Xolo como un 'analizador de IA' para predecir el éxito de esos encajes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es un salto cualitativo. Al final de la sesión, podrán decir: <strong>'Yo puedo diseñar múltiples piezas interconectadas en un Part Studio y entiendo cómo una simulación de IA puede predecir el éxito de un ensamblaje basándose en dimensiones y tolerancias.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Simulación y Análisis Predictivo) ⏰ 12 minutos</h2>
+                <p>Fase de diálogo con Xolo para entender el concepto de tolerancia y cómo funciona la simulación predictiva.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Concepto de Tolerancia ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre los tipos de encajes, entendiendo que es una decisión de diseño.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entramos al A.I. GYM. Hoy Xolo es su analista predictivo. Para entender las bases, consúltenle: <strong>'Xolo, explícame los tres tipos de encajes por tolerancia: con Huelgo, a Presión y de Transición.'</strong> Ustedes, como directores, deben decidir qué tipo de encaje necesita cada unión de su mecanismo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Simulación Predictiva ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador explica cómo funcionará la simulación de Xolo, verbalizando el ejemplo del reporte predictivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Una vez que hayan modelado sus piezas, le describirán una unión clave a Xolo, dándole la dimensión nominal y el tipo de encaje que buscan. Él ejecutará una simulación. Su respuesta será un reporte conceptual como este: *'Análisis de la unión Eje-Agujero: Dimensión Nominal: 10mm. Tipo de Encaje: Huelgo. Predigo: Fit Success: 98%, Interference Risk: 2%. Recomendación: Aumentar el diámetro a 10.3mm para garantizar un 100% de éxito.'* Su objetivo es aprender a pensar en la incertidumbre del mundo físico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Diseño Multi-cuerpo y Validación IA) ⏰ 18 minutos</h2>
+                <p>Fase de trabajo práctico donde los estudiantes modelan su mecanismo y utilizan la simulación de Xolo para validar un encaje clave.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Modelado Multi-cuerpo en Contexto ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes abren un Part Studio y modelan las piezas principales de su mecanismo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Abran un nuevo Part Studio. Basándose en su brief, modelen las 2-3 piezas principales de su mecanismo. Recuerden diseñarlas en su posición final, usando la geometría de una como referencia para la otra. Utilicen las técnicas de croquis robusto y extrusión que ya dominan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diálogo de Simulación y Aplicación ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los estudiantes interactúan con Xolo para obtener un análisis predictivo y aplican la recomendación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Una vez modeladas las piezas, inicien el diálogo de simulación con Xolo. Describan la unión clave, por ejemplo: **"He modelado un eje y un agujero, ambos de 8mm de diámetro. Necesito un encaje con huelgo para que gire."** Xolo les dará una predicción y una recomendación. Apliquen esa recomendación en su modelo editando el croquis. Una unión clave de su proyecto ahora está validada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final para compartir los resultados de la simulación y reflexionar sobre la importancia de la prevención de errores en el diseño.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador guía una reflexión individual sobre la simulación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su Part Studio. Reflexionen: <strong>¿Por qué es importante considerar las tolerancias antes de fabricar? ¿Cómo esta simulación les puede ahorrar tiempo y frustración en el futuro?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Discusión en Parejas) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes comparten sus resultados y reflexiones en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, compartan sus pantallas. Expliquen qué unión analizaron con Xolo y cuál fue la predicción y recomendación que recibieron. Discutan por qué este tipo de análisis es valioso.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador recoge impresiones y consolida la mentalidad de "predecir y prevenir".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Han dado un paso más allá del diseño idealizado. Han comenzado a pensar como ingenieros de fabricación. Han utilizado una simulación de IA no para crear, sino para *predecir y prevenir* errores. Esta capacidad de anticipación es una habilidad de alto valor. Ahora que sus piezas están diseñadas y validadas, el siguiente paso lógico es unirlas en un ensamblaje digital.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
